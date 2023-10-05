@@ -1,24 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CakeView from './features/Cake/CakeView';
+import IcecreamView from './features/Icecream/IcecreamView';
+import UsersView from './features/Users/UsersView';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CakeView />
+      <hr />
+      <IcecreamView />
+      <hr />
+      <UsersView />
     </div>
   );
 }
